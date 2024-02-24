@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { VT323 } from 'next/font/google'
 import './globals.css'
+import { ProvedorJogo } from '@/data/context/ContextoJogo'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
+const vt323 = VT323({weight: "400", subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Flappy Bird Limpo',
@@ -16,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <ProvedorJogo>
+          <body className={vt323.className}>{children}</body>
+      </ProvedorJogo>
     </html>
   )
 }

@@ -1,3 +1,8 @@
+# Run
+```sh
+npm run dev
+```
+
 # Turborepo starter
 
 This is an official starter Turborepo.
