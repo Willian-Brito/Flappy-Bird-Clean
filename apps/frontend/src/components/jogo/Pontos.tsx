@@ -1,14 +1,12 @@
 import useJogo from "@/data/hook/useJogo"
 
-export interface PontosProps {
-    valor?: number
-}
-
-export default function Pontos(props: PontosProps) {
+export default function Pontos() {
+    
     const { jogo } = useJogo();
     const pontos = jogo.pontos.valor;
+    const record = jogo.recorde.valor;
 
     return(
-        <div className="text-7xl ml-5 z-50 font-bold absolute">{pontos}</div>
+        <div className="text-7xl ml-5 z-50 font-bold absolute">{pontos}/{record}</div>
     )
 }
