@@ -36,7 +36,6 @@ export default function Botao(props: BotaoProps) {
                     <div className={`${props.cor} h-3 w-1`}></div>
                 </>
             )}
-
         </button>
     )
 }
